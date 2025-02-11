@@ -1,0 +1,32 @@
+:root {
+  --background-color: black;
+  --color-text: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--color-text);
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.header {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__link:hover {
+  text-decoration: underline;
+}
