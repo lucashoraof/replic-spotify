@@ -1,5 +1,6 @@
 :root {
-  --background-color: black;
+  --background-color-default: black;
+  --background-color-primary: #062d14;
   --color-text: white;
 }
 
@@ -10,7 +11,7 @@
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--background-color-default);
   color: var(--color-text);
   font-family: 'Montserrat', sans-serif;
 }
@@ -18,6 +19,12 @@ body {
 a {
   color: var(--color-text);
   text-decoration: none;
+}
+
+#root {
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -28,5 +35,23 @@ a {
 }
 
 .header__link:hover {
+  text-decoration: underline;
+}
+
+.main {
+  border-radius: 15px;
+  padding: 20px;
+  margin: 0px 10px 10px;
+  flex: 1;
+  background-image: linear-gradient(to bottom, var(--background-color-primary), var(--background-color-default));
+}
+
+.main__texts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__link:hover {
   text-decoration: underline;
 }
